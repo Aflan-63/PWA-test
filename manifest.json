@@ -1,7 +1,7 @@
 {
   "name": "Ifaz Ahmed",
   "short_name": "Portfolio",
-  "start_url": "/?home=true",
+  "start_url": "/",
   "icons": [{
     "src": "\/android-icon-36x36.png",
     "sizes": "36x36",
