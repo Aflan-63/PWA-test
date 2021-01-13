@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <title>PWA</title>
 </head>
 
-<body>
-
-    <svg class="testclass" xmlns="http://www.w3.org/2000/svg" width="624.971" height="527.422"
-        viewBox="0 0 624.971 527.422">
+<body style="background: #ffbd39;">
+    <script>
+        if ('serviceWorker in navigator') {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+    <svg class="element" xmlns="http://www.w3.org/2000/svg" width="1344" height="728" viewBox="0 0 624.971 527.422">
         <g transform="matrix(0.966, 0.259, -0.259, 0.966, 36.608, 0)">
             <path
                 d="M3521.064,4529.506l-170.806-16.81c-.187.3-.376.6-.563.895l48.636,35.383-.308,1.456c-59.514,8.006-118.595,7.566-177.6-9.417,4.572,4.333,8.932,8.922,13.753,12.96,29.382,24.615,62.869,42.184,98.134,56.611,49.042,20.063,99.906,33.78,151.948,43.348a4.149,4.149,0,0,0,3.56-.434c-2.135-3.463-4.43-6.868-6.407-10.446-13.32-24.108-20.389-50.312-25.781-77.083-.72-3.578,1.486-4.4,4.043-5.152,12.725-3.765,25.837-5.616,38.886-7.737,8.936-1.452,17.934-2.528,26.9-3.769C3526.755,4542.1,3522.994,4536,3521.064,4529.506Z"
@@ -91,9 +94,9 @@
                 fill="#f58800" />
         </g>
     </svg>
-    <h3>Hello World</h3>
+    <marquee>
+        <h1 style="font-size: 100px;">Le me Raichu!</h1>
+    </marquee>
 </body>
-<script>
-</script>
 
 </html>
